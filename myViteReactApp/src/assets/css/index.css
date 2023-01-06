@@ -303,6 +303,12 @@ ul {
   margin-bottom: 1rem;
   letter-spacing: var(--letterSpacing);
 }
+.coffee-info span {
+  display: block;
+}
+.coffee-info a {
+  color: var(--primary-500);
+}
 
 @media screen and (min-width: 992px) {
   .coffee-info {
