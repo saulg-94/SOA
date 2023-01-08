@@ -18,6 +18,7 @@ const router = createBrowserRouter([
       {
         path: 'projects',
         element: <Projects />,
+        loader: Projects,
       },
       {
         path: 'about',
