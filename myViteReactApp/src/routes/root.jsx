@@ -2,13 +2,16 @@ import { Outlet } from 'react-router-dom'
 import Wrapper from '../assets/wrappers/LandingPage'
 import logo from '../assets/Logo.svg'
 import Main from '../assets/images/pair_programming.svg'
+import Hero from '../assets/images/hero-background.svg'
 
 export default function Root() {
   return (
     <>
       <Wrapper>
         <nav>
-          <img src={logo} alt='logo' />
+          <div className='logo-container'>
+            <img src={logo} alt='logo' id='logo' />
+          </div>
           <h3>Shorn Ones Association</h3>
         </nav>
         <main className='container page'>
@@ -28,8 +31,16 @@ export default function Root() {
             </p>
             <button className='btn btn-hero'>Access Exclusive Content</button>
           </div>
+
           <img src={Main} alt='landing page image' className='main-img' />
         </main>
+
+        <section className='demo-section'>
+          <h1>demo section</h1>
+          <div className='demo-container'>
+            <img src={Hero} alt='hero' />
+          </div>
+        </section>
       </Wrapper>
       <Outlet />
     </>
