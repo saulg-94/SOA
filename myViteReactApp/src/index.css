@@ -13,6 +13,7 @@ html {
 
 :root {
   /* colors */
+  --primary-10: #f0eddf;
   --primary-50: #f0ecd5;
   --primary-100: #e9e3c0;
   --primary-200: #e1d9ab;
