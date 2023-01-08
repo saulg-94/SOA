@@ -1,11 +1,11 @@
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
-
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
 
 html {
   font-size: 100%;
@@ -13,42 +13,16 @@ html {
 
 :root {
   /* colors */
-  --primary-50: #f0ecd5;
-  --primary-100: #e9e3c0;
-  --primary-200: #e1d9ab;
-  --primary-300: #d2c682;
-  --primary-400: #c3b358;
-  --primary-500: #b4a02e;
-  --primary-600: #908025;
-  --primary-700: #6c601c;
-  --primary-800: #5a5017;
-  --primary-900: #242009;
-
-  /* more primary-500s*/
-  /* 
-
-
-  --Shade of dark green-blues
-  #248064
-  #246350 -shade between green and blue
-  #11543f 
-  #0b3d2e
-
-  --Shade of light-grey and greens
-  #9db1ab
-  #b6c5c0
-  #5a6d66
-
-  --Shades of grey-blue
-  #243d56
-  #1e3b56
-
-  --Shades of grey and yellow-orange
-  #564e1e
-  #796d28
-  #b4a02e
-  #a89a50
-  */
+  --primary-50: #e0fcff;
+  --primary-100: #bef8fd;
+  --primary-200: #87eaf2;
+  --primary-300: #54d1db;
+  --primary-400: #38bec9;
+  --primary-500: #2cb1bc;
+  --primary-600: #14919b;
+  --primary-700: #0e7c86;
+  --primary-800: #0a6c74;
+  --primary-900: #044e54;
 
   /* grey */
   --grey-50: #f0f4f8;

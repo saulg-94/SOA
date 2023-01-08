@@ -3,32 +3,47 @@ import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider,
-  useLoaderData,
+  Route,
+  createRoutesFromElements,
 } from 'react-router-dom'
+import 'normalize.css'
 import './index.css'
-import Projects, { loader as projectLoader } from './routes/projects'
+//Components
+import Root from './routes/root'
+import Projects from './routes/projects'
 import About from './routes/about'
+import ErrorPage from './error-page'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-    children: [
-      {
-        path: 'projects',
-        element: <Projects />,
-        loader: projectLoader,
-      },
-      {
-        path: 'about',
-        element: <About />,
-      },
-    ],
-  },
-])
+const JSXRouter = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Root />} path='/' errorElement={<ErrorPage />}>
+      <Route element={<Projects />} path='projects' />
+      <Route element={<About />} path='about' />
+    </Route>
+  )
+)
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <Root />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       {
+//         path: 'projects',
+//         element: <Projects />,
+//         errorElement: <ErrorPage />,
+//       },
+//       {
+//         path: 'about',
+//         element: <About />,
+//       },
+//     ],
+//   },
+// ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={JSXRouter} />
   </React.StrictMode>
 )
