@@ -1,4 +1,4 @@
-import { RouterProvider, useLoaderData } from 'react-router-dom'
+import { useLoaderData } from 'react-router-dom'
 
 export default function Projects() {
   const projects = useLoaderData()
