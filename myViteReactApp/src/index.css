@@ -301,6 +301,22 @@ ul {
 .loading-center {
   margin: 0 auto;
 }
+
+/* animate span element */
+.slide-in-element {
+  /* display: inline; */
+  color: var(--primary-600);
+  animation: slideInFromRight 1s ease-out; /* apply the "slideInFromRight" animation */
+}
+@keyframes slideInFromRight {
+  50% {
+    transform: translateX(50%); /* start off-screen to the right */
+  }
+  0% {
+    transform: translateX(70%); /* end at the starting position */
+  }
+}
+
 /* title */
 
 .title {

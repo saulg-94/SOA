@@ -13,7 +13,7 @@ const Wrapper = styled.main`
     background: black;
     border-radius: 10px;
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.35rem;
     }
   }
   .logo-container {
@@ -25,48 +25,11 @@ const Wrapper = styled.main`
     min-height: 2rem;
     border: 1px solid black;
     border-radius: 0.5rem;
-    /* animation: spin 4s linear infinite; */
   }
-  /* .logo-container::after {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    background: rgb(43, 42, 42);
-    background: var(--primary-700);
-    opacity: 0.5;
-    width: 90%;
-    height: 57px;
-    left: 3%;
-    border-radius: 50%;
-    filter: blur(3px);
-    animation: spin 4s linear infinite;
-  }
-  .logo-container::before {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    background: rgb(43, 42, 42);
-    background: var(--primary-900);
-    opacity: 0.6;
-    width: 80%;
-    height: 6px;
-    left: 3%;
-    border-radius: 50%;
-    filter: blur(3px);
-    animation: spin 4s linear infinite;
-  } */
+
   #logo {
     height: 3rem;
   }
-
-  /* @keyframes spin {
-    100% {
-      transform: translateZ(10px) rotateX(0deg);
-    }
-    0% {
-      transform: translateZ(10px) rotateY(360deg);
-    }
-  } */
 
   .page {
     min-height: calc(100vh - var(--nav-height));
@@ -76,44 +39,33 @@ const Wrapper = styled.main`
     background: var(--primary-50);
     /* border: solid green 2px; */
   }
-  h1 {
+  h2 {
     font-weight: 700;
-    span {
-      color: var(--primary-600);
-    }
   }
-  p {
-    color: var(--grey-700);
+  .slide-in-element {
   }
+
   .main-img {
     display: none;
   }
   .demo-section {
     background: var(--primary-300);
+
     h1 {
       text-align: center;
       margin: auto;
     }
-    img {
-      padding-left: 8px;
-      background: linear-gradient(
-        to right,
-
-        var(--primary-300),
-        var(--primary-600),
-        var(--primary-600),
-        var(--primary-800),
-        var(--primary-600),
-        var(--primary-600),
-        var(--primary-300)
-      );
+    .demo-container {
+      display: block;
+      height: 100vh;
+      width: auto;
     }
   }
 
   /**************
   MIN-WIDTH 680px
   ****************/
-  @media (min-width: 680px) {
+  @media (min-width: 810px) {
     .page {
       grid-template-columns: 1fr 1fr;
       column-gap: 3rem;

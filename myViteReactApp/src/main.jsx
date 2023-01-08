@@ -7,6 +7,7 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom'
 import 'normalize.css'
+import 'styled-components'
 import './index.css'
 //Components
 import Root from './routes/root'

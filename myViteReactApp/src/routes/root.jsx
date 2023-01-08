@@ -1,8 +1,14 @@
 import { Outlet } from 'react-router-dom'
+
 import Wrapper from '../assets/wrappers/LandingPage'
 import logo from '../assets/Logo.svg'
 import Main from '../assets/images/pair_programming.svg'
-import Hero from '../assets/images/hero-background.svg'
+
+function logWindowSize() {
+  console.log(`Window size: ${window.innerWidth} x ${window.innerHeight}`)
+}
+
+window.addEventListener('resize', logWindowSize)
 
 export default function Root() {
   return (
@@ -17,9 +23,11 @@ export default function Root() {
         <main className='container page'>
           {/* info */}
           <div className='info'>
-            <h1>
-              Web Development with an <span>Attitude</span>
-            </h1>
+            <h2>
+              Web Development with an{' '}
+              <div className='slide-in-element'>Attitude</div>
+            </h2>
+
             <p>
               Solo entrepreneur on a quest to learn the secrets of what it takes
               to make a start-up successful. With an emphasis on local impact
@@ -38,7 +46,11 @@ export default function Root() {
         <section className='demo-section'>
           <h1>demo section</h1>
           <div className='demo-container'>
-            <img src={Hero} alt='hero' />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consequatur nobis porro accusantium facere perferendis eum
+              asperiores placeat culpa nesciunt illum?
+            </p>
           </div>
         </section>
       </Wrapper>
