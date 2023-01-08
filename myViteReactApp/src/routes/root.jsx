@@ -3,6 +3,9 @@ import { Outlet } from 'react-router-dom'
 import Wrapper from '../assets/wrappers/LandingPage'
 import logo from '../assets/Logo.svg'
 import Main from '../assets/images/pair_programming.svg'
+import Project from '../assets/images/version_control.svg'
+import Resume from '../assets/images/resume_folder.svg'
+import Social from '../assets/images/social_media.svg'
 
 function logWindowSize() {
   console.log(`Window size: ${window.innerWidth} x ${window.innerHeight}`)
@@ -44,13 +47,36 @@ export default function Root() {
         </main>
 
         <section className='demo-section'>
-          <h1>demo section</h1>
+          <h1>Projects</h1>
           <div className='demo-container'>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consequatur nobis porro accusantium facere perferendis eum
-              asperiores placeat culpa nesciunt illum?
-            </p>
+            <div className='project-card'>
+              <h4>Project</h4>
+              <img src={Project} alt='project' />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequatur nobis porro accusantium facere perferendis eum
+                asperiores placeat culpa nesciunt illum?
+              </p>
+            </div>
+
+            <div className='project-card'>
+              <h4>Project</h4>
+              <img src={Resume} alt='project' />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequatur nobis porro accusantium facere perferendis eum
+                asperiores placeat culpa nesciunt illum?
+              </p>
+            </div>
+            <div className='project-card'>
+              <h4>Project</h4>
+              <img src={Social} alt='project' />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequatur nobis porro accusantium facere perferendis eum
+                asperiores placeat culpa nesciunt illum?
+              </p>
+            </div>
           </div>
         </section>
       </Wrapper>

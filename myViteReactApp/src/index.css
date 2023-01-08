@@ -13,6 +13,18 @@ html {
 
 :root {
   /* colors */
+  --primary-10: #ffffff;
+  --primary-50: #f0ebe7;
+  --primary-100: #e1d7ce;
+  --primary-200: #d1c2b6;
+  --primary-300: #c2ae9e;
+  --primary-400: #b39a86;
+  --primary-500: #5d300b;
+  --primary-600: #3e2007;
+  --primary-700: #341b06;
+  --primary-800: #1f1004;
+  --primary-900: #0a0501;
+  /* colors  yellow-shade
   --primary-10: #f0eddf;
   --primary-50: #f0ecd5;
   --primary-100: #e9e3c0;
@@ -24,7 +36,7 @@ html {
   --primary-700: #6c601c;
   --primary-800: #5a5017;
   --primary-900: #242009;
-
+*/
   /* more primary-500s*/
   /* 
 
@@ -305,7 +317,7 @@ ul {
 /* animate span element */
 .slide-in-element {
   /* display: inline; */
-  color: var(--primary-600);
+  color: var(--primary-400);
   animation: slideInFromRight 1s ease-out; /* apply the "slideInFromRight" animation */
 }
 @keyframes slideInFromRight {
