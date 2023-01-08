@@ -1,7 +1,7 @@
-export default function Root() {
+export default function Projects() {
   return (
     <>
-      <h1>Landing Page</h1>
+      <h1>Projects Page</h1>
 
       <div className='container'></div>
     </>
