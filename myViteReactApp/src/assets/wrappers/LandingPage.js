@@ -11,7 +11,7 @@ const Wrapper = styled.main`
     border: solid red 2px;
     img {
       display: inline-block;
-      width: 25%;
+      width: 10%;
       height: 75%;
       background: var(--primary-10);
     }
@@ -43,6 +43,9 @@ const Wrapper = styled.main`
     }
     .main-img {
       display: block;
+      background: var(--primary-900);
+      width: 40vh;
+      height: 40vh;
     }
   }
 `
